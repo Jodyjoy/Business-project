@@ -366,6 +366,19 @@ p{ margin:0 0 1em; color: var(--text-dim); }
 .carousel-dots button{ width:8px; height:8px; border-radius:50%; background: rgba(255,255,255,.2); border:none; padding:0; }
 .carousel-dots button.active{ background: var(--accent-grad); width:22px; border-radius:100px; transition: width .3s ease; }
 
+.ig-strip{
+  max-width: 720px; margin: 40px auto 0; background: var(--surface); border:1px solid var(--border); border-radius: var(--radius);
+  padding: 24px 28px; text-align:center;
+}
+.ig-strip-title{ font-weight:800; color: var(--text); display:inline-block; margin-bottom: 14px; }
+.ig-strip-title span{ color: var(--accent-2); font-weight:700; }
+.ig-quotes{ display:grid; gap:10px; }
+.ig-quotes p{ margin:0; font-size:.88rem; font-style:italic; color: var(--text-dim); }
+.ig-quotes p span{ display:block; margin-top:4px; font-style:normal; font-weight:700; font-size:.76rem; color: var(--text-mute); }
+
+.menu-legend{ text-align:center; font-size:.8rem; margin-top: 32px; color: var(--text-mute); }
+.menu-legend strong{ color: var(--text-dim); }
+
 .rate-cta{ text-align:center; margin-top: 60px; }
 .star-input{ display:flex; justify-content:center; gap:6px; font-size:2rem; }
 .star-input button{ background:none; border:none; color: rgba(255,255,255,.25); transition: color .2s ease, transform .2s ease; }
