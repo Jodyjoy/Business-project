@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>270° Rooftop — Nairobi's Sky-High Rooftop Bar &amp; Kitchen</title>
+<meta name="description" content="270° Rooftop — panoramic skyline views, signature cocktails, and elevated small plates in the heart of Nairobi. Reserve your table for sunset.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="#home" class="brand">
+      <span class="brand-mark">270°</span>
+      <span class="brand-word">ROOFTOP</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link" data-nav>Home</a></li>
+        <li><a href="#about" class="nav-link" data-nav>Experience</a></li>
+        <li><a href="#menu" class="nav-link" data-nav>Menu</a></li>
+        <li><a href="#gallery" class="nav-link" data-nav>Gallery</a></li>
+        <li><a href="#reviews" class="nav-link" data-nav>Reviews</a></li>
+        <li><a href="#visit" class="nav-link" data-nav>Visit</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle sunset / night palette" title="Toggle palette">
+        <svg viewBox="0 0 24 24" class="icon-sun"><path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4M4 12H2M22 12h-2M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24" class="icon-moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="#reserve" class="btn btn-primary btn-small nav-cta">Reserve a Table</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="status-ribbon" id="statusRibbon">
+    <div class="container status-ribbon-inner">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking hours…</span>
+      <span class="dot-sep">•</span>
+      <span id="busyText">—</span>
+      <span class="dot-sep hide-sm">•</span>
+      <span class="hide-sm" id="ratingInline">4.3 ★ (664 reviews)</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="skyline" viewBox="0 0 1600 500" preserveAspectRatio="none">
+      <rect x="40" y="260" width="70" height="240" />
+      <rect x="130" y="200" width="55" height="300" />
+      <rect x="200" y="300" width="90" height="200" />
+      <rect x="310" y="150" width="45" height="350" />
+      <rect x="370" y="230" width="80" height="270" />
+      <rect x="470" y="120" width="60" height="380" />
+      <rect x="550" y="270" width="100" height="230" />
+      <rect x="670" y="90"  width="50" height="410" />
+      <rect x="740" y="210" width="75" height="290" />
+      <rect x="835" y="160" width="65" height="340" />
+      <rect x="920" y="260" width="95" height="240" />
+      <rect x="1035" y="110" width="55" height="390" />
+      <rect x="1110" y="230" width="80" height="270" />
+      <rect x="1210" y="180" width="60" height="320" />
+      <rect x="1290" y="280" width="100" height="220" />
+      <rect x="1410" y="150" width="50" height="350" />
+      <rect x="1480" y="240" width="80" height="260" />
+    </svg>
+    <div class="sun-glow"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+  </div>
+
+  <div class="hero-content container">
+    <p class="eyebrow reveal">Nairobi's Rooftop Icon · 270° of Skyline</p>
+    <h1 class="reveal">Sunsets taste better <span class="italic">up here.</span></h1>
+    <p class="hero-sub reveal">Signature cocktails, an elevated small-plates kitchen, and uninterrupted panoramic views — perched above the city, open every golden hour into the night.</p>
+
+    <div class="hero-meta reveal">
+      <div class="rating-badge">
+        <span class="stars" aria-hidden="true">★★★★<span class="half">★</span></span>
+        <strong>4.3</strong>
+        <span class="muted">(664 reviews)</span>
+      </div>
+      <span class="chip">Restaurant &amp; Bar</span>
+      <span class="chip">Ksh 1,500 – 4,000 / person</span>
+      <span class="chip" title="Step-free access">♿ Accessible</span>
+    </div>
+
+    <div class="hero-actions reveal">
+      <a href="#reserve" class="btn btn-primary">Find a Table</a>
+      <a href="#menu" class="btn btn-ghost">View Menu</a>
+      <a href="#visit" class="btn btn-outline">Get Directions →</a>
+    </div>
+  </div>
+
+  <button class="scroll-cue" id="scrollCue" aria-label="Scroll to explore">
+    <span></span>
+    <small>Scroll</small>
+  </button>
+</section>
+
+<!-- ================= MARQUEE ================= -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>270° Skyline Views</span><span>•</span><span>Signature Cocktails</span><span>•</span>
+    <span>Sunset Happy Hour</span><span>•</span><span>Live DJ Sets</span><span>•</span>
+    <span>Private Events</span><span>•</span><span>Elevated Small Plates</span><span>•</span>
+    <span>270° Skyline Views</span><span>•</span><span>Signature Cocktails</span><span>•</span>
+    <span>Sunset Happy Hour</span><span>•</span><span>Live DJ Sets</span><span>•</span>
+    <span>Private Events</span><span>•</span><span>Elevated Small Plates</span><span>•</span>
+  </div>
+</div>
+
+<!-- ================= KNOW BEFORE YOU GO / ABOUT ================= -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Know Before You Go</p>
+      <h2>Everything for the perfect visit</h2>
+    </div>
+
+    <div class="tip-grid">
+      <article class="tip-card reveal">
+        <div class="tip-icon">🌇</div>
+        <h3>Stunning sunset views</h3>
+        <p>Guests consistently call out the panoramic 270° skyline views — arrive an hour before sunset to catch golden hour from the best seats.</p>
+      </article>
+      <article class="tip-card reveal">
+        <div class="tip-icon">📅</div>
+        <h3>Reserve ahead — it fills up fast</h3>
+        <p>The rooftop is one of the busiest in the city on weekends and evenings. Use "Find a Table" below to lock in your spot in advance.</p>
+      </article>
+      <article class="tip-card reveal">
+        <div class="tip-icon">🪪</div>
+        <h3>Bring valid identification</h3>
+        <p>A quick security check is standard at the entrance. Keep a government-issued ID handy to clear the door smoothly.</p>
+      </article>
+    </div>
+
+    <div class="about-split">
+      <div class="about-copy reveal">
+        <p class="eyebrow">Our Story</p>
+        <h2>An elevated escape above the city</h2>
+        <p>Perched high above Nairobi with an unobstructed 270-degree sweep of the skyline, our rooftop was built for lingering — long lunches that drift into golden hour, first dates that turn into nightcaps, and celebrations that need a view to match. By day it's sun-drenched brunch and single-origin coffee; by night, hand-crafted cocktails, a curated playlist, and the city lights stretching to the horizon.</p>
+        <ul class="check-list">
+          <li>Indoor lounge + open-air rooftop seating</li>
+          <li>Full bar with signature &amp; classic cocktails</li>
+          <li>Kitchen serving brunch through late night</li>
+          <li>Step-free, wheelchair-accessible access</li>
+        </ul>
+      </div>
+      <div class="about-visual reveal">
+        <div class="glass-card cocktail-art" aria-hidden="true">
+          <div class="glass"></div>
+          <div class="liquid"></div>
+          <div class="straw"></div>
+          <div class="garnish"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HOURS ================= -->
+<section class="section hours-section">
+  <div class="container hours-grid">
+    <div class="hours-card reveal">
+      <h3>🕐 Hours</h3>
+      <ul class="hours-list" id="hoursList">
+        <li data-day="0"><span>Sunday</span><span>11:00 AM – 10:30 PM</span></li>
+        <li data-day="1"><span>Monday</span><span>11:00 AM – 10:30 PM</span></li>
+        <li data-day="2"><span>Tuesday</span><span>11:00 AM – 10:30 PM</span></li>
+        <li data-day="3"><span>Wednesday</span><span>11:00 AM – 10:30 PM</span></li>
+        <li data-day="4"><span>Thursday</span><span>11:00 AM – 10:30 PM</span></li>
+        <li data-day="5"><span>Friday</span><span>11:00 AM – 11:30 PM</span></li>
+        <li data-day="6"><span>Saturday</span><span>11:00 AM – 11:30 PM</span></li>
+      </ul>
+      <p class="fine-print">* Hours may shift for private events &amp; holidays — call ahead to confirm.</p>
+    </div>
+    <div class="hours-card live-card reveal">
+      <h3>📡 Live Status</h3>
+      <div class="live-status">
+        <span class="status-dot lg" id="statusDotLg"></span>
+        <div>
+          <p class="live-primary" id="liveStatusPrimary">—</p>
+          <p class="live-secondary" id="liveStatusSecondary">—</p>
+        </div>
+      </div>
+      <div class="crowd-meter">
+        <p class="crowd-label">Typical crowd level right now</p>
+        <div class="crowd-bar"><span id="crowdFill"></span></div>
+        <p class="crowd-caption" id="crowdCaption">—</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="section menu-section" id="menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">The Menu</p>
+      <h2>Crafted to sip, share &amp; savor</h2>
+      <p class="section-sub">From sunrise smoothies to midnight sips — every category, one rooftop.</p>
+    </div>
+
+    <div class="menu-controls reveal">
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Menu categories">
+        <button class="tab-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab-btn" data-filter="signature" role="tab" aria-selected="false">Signature Cocktails</button>
+        <button class="tab-btn" data-filter="mocktail" role="tab" aria-selected="false">Mocktails</button>
+        <button class="tab-btn" data-filter="beer" role="tab" aria-selected="false">Beer</button>
+        <button class="tab-btn" data-filter="sips" role="tab" aria-selected="false">Sips</button>
+        <button class="tab-btn" data-filter="juice" role="tab" aria-selected="false">Juices &amp; Smoothies</button>
+        <button class="tab-btn" data-filter="food" role="tab" aria-selected="false">Food</button>
+        <button class="tab-btn" data-filter="soft" role="tab" aria-selected="false">Soft Drinks &amp; Water</button>
+      </div>
+      <div class="menu-search">
+        <svg viewBox="0 0 24 24" width="18" height="18"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8" fill="none"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <input type="search" id="menuSearch" placeholder="Search the menu… e.g. margarita">
+      </div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"><!-- populated by JS --></div>
+    <p class="menu-empty hidden" id="menuEmpty">No items match your search — try another word or category.</p>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section gallery-section" id="gallery">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2>A taste of the view</h2>
+    </div>
+    <div class="gallery-grid" id="galleryGrid"><!-- populated by JS --></div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section reviews-section" id="reviews">
+  <div class="container">
+    <div class="section-head reveal">
+      <p class="eyebrow">Guest Love</p>
+      <h2>4.3 ★ from 664 reviews</h2>
+    </div>
+
+    <div class="reviews-carousel reveal" id="reviewsCarousel">
+      <div class="reviews-track" id="reviewsTrack"><!-- populated by JS --></div>
+      <button class="carousel-btn prev" id="reviewPrev" aria-label="Previous review">‹</button>
+      <button class="carousel-btn next" id="reviewNext" aria-label="Next review">›</button>
+    </div>
+    <div class="carousel-dots" id="reviewDots"></div>
+
+    <div class="rate-cta reveal">
+      <p>Been to 270°? Rate your visit:</p>
+      <div class="star-input" id="starInput" role="radiogroup" aria-label="Rate your visit">
+        <button data-val="1" aria-label="1 star">★</button>
+        <button data-val="2" aria-label="2 stars">★</button>
+        <button data-val="3" aria-label="3 stars">★</button>
+        <button data-val="4" aria-label="4 stars">★</button>
+        <button data-val="5" aria-label="5 stars">★</button>
+      </div>
+      <p class="thanks-msg hidden" id="thanksMsg">Thanks for the love! 🎉</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESERVE ================= -->
+<section class="section reserve-section" id="reserve">
+  <div class="container reserve-grid">
+    <div class="reserve-copy reveal">
+      <p class="eyebrow">Find a Table</p>
+      <h2>Reserve your sunset spot</h2>
+      <p>Tables move fast, especially Thursday through Sunday evenings. Tell us when you're coming and we'll hold your view.</p>
+      <ul class="reserve-points">
+        <li>✓ Instant confirmation code</li>
+        <li>✓ Free cancellation up to 2 hours ahead</li>
+        <li>✓ Large groups &amp; private events welcome</li>
+      </ul>
+      <div class="reserve-alt">
+        <a href="tel:+254700000000" class="alt-link">📞 Prefer to call? +254 700 000 000</a>
+        <a href="https://wa.me/254700000000" target="_blank" rel="noopener" class="alt-link">💬 WhatsApp us</a>
+      </div>
+    </div>
+
+    <form class="reserve-form reveal" id="reserveForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="rName">Full name</label>
+          <input id="rName" name="name" type="text" required placeholder="Jane Wanjiru">
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="rPhone">Phone number</label>
+          <input id="rPhone" name="phone" type="tel" required placeholder="07XX XXX XXX">
+          <span class="error-msg"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="rEmail">Email <span class="optional">(for confirmation)</span></label>
+        <input id="rEmail" name="email" type="email" placeholder="you@example.com">
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="rDate">Date</label>
+          <input id="rDate" name="date" type="date" required>
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="rTime">Time</label>
+          <select id="rTime" name="time" required>
+            <option value="">Select time</option>
+            <option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option>
+            <option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option>
+            <option selected>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option>
+            <option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option>
+          </select>
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="rGuests">Guests</label>
+          <select id="rGuests" name="guests" required>
+            <option value="">#</option>
+            <script>/* fallback for no-js not needed */</script>
+          </select>
+          <span class="error-msg"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="rOccasion">Occasion <span class="optional">(optional)</span></label>
+        <select id="rOccasion" name="occasion">
+          <option value="">Just a visit</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Date night</option>
+          <option>Business</option>
+          <option>Group celebration</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="rNotes">Special requests <span class="optional">(optional)</span></label>
+        <textarea id="rNotes" name="notes" rows="3" placeholder="Window seat, allergies, birthday cake…"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-full">
+        <span class="btn-label">Confirm Reservation</span>
+        <span class="btn-spinner" aria-hidden="true"></span>
+      </button>
+      <p class="form-fineprint">By reserving you agree to arrive within 15 minutes of your slot. Tables are held for 15 minutes past booking time.</p>
+    </form>
+  </div>
+
+  <!-- Confirmation modal -->
+  <div class="modal-backdrop hidden" id="confirmModal">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="confirm-check">✓</div>
+      <h3 id="confirmTitle">Table reserved!</h3>
+      <p>We've saved your booking. Show this code at the door:</p>
+      <p class="confirm-code" id="confirmCode">270-000000</p>
+      <div class="confirm-details" id="confirmDetails"></div>
+      <div class="confirm-actions">
+        <button class="btn btn-outline" id="modalNewBooking" type="button">Book Another</button>
+        <button class="btn btn-primary" id="modalDone" type="button">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upcoming booking banner -->
+  <div class="upcoming-banner hidden" id="upcomingBanner">
+    <div class="container upcoming-inner">
+      <span>📅 You have an upcoming reservation — <strong id="upcomingText"></strong></span>
+      <button id="cancelUpcoming">Cancel</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VISIT / LOCATION ================= -->
+<section class="section visit-section" id="visit">
+  <div class="container visit-grid">
+    <div class="visit-map reveal" aria-hidden="true">
+      <div class="map-frame">
+        <svg viewBox="0 0 400 300" class="map-lines">
+          <path d="M0 60 H400 M0 140 H400 M0 220 H400" stroke="currentColor" stroke-opacity=".18" stroke-width="2"/>
+          <path d="M60 0 V300 M160 0 V300 M260 0 V300 M340 0 V300" stroke="currentColor" stroke-opacity=".18" stroke-width="2"/>
+        </svg>
+        <div class="map-pin">
+          <span class="pin-dot"></span>
+          <span class="pin-pulse"></span>
+        </div>
+        <span class="map-label">270° Rooftop</span>
+      </div>
+    </div>
+
+    <div class="visit-copy reveal">
+      <p class="eyebrow">Visit Us</p>
+      <h2>Find us above the skyline</h2>
+      <p class="visit-address">Rooftop Level · Nairobi CBD, Kenya</p>
+      <p class="muted small">(Update with your exact street address &amp; building name)</p>
+
+      <div class="visit-info-grid">
+        <div>
+          <h4>Getting there</h4>
+          <p>Valet &amp; secure parking available at street level. Elevator access direct to the rooftop lounge.</p>
+        </div>
+        <div>
+          <h4>Dress code</h4>
+          <p>Smart casual. We recommend layering — it gets breezy once the sun goes down.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p><a href="tel:+254700000000">+254 700 000 000</a><br><a href="mailto:hello@270rooftop.co.ke">hello@270rooftop.co.ke</a></p>
+        </div>
+      </div>
+
+      <div class="visit-actions">
+        <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=query&query=270%C2%B0%20Rooftop%20Nairobi">Get Directions</a>
+        <a class="btn btn-ghost" href="#reserve">Reserve Instead</a>
+      </div>
+
+      <div class="social-row">
+        <a href="#" aria-label="Instagram" class="social-btn">IG</a>
+        <a href="#" aria-label="Facebook" class="social-btn">FB</a>
+        <a href="#" aria-label="TikTok" class="social-btn">TT</a>
+        <a href="#" aria-label="X / Twitter" class="social-btn">X</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter">
+  <div class="container newsletter-inner reveal">
+    <div>
+      <h3>Never miss a sunset event</h3>
+      <p>Rooftop takeovers, live DJ nights &amp; menu drops — straight to your inbox.</p>
+    </div>
+    <form id="newsletterForm" class="newsletter-form">
+      <input type="email" id="newsletterEmail" required placeholder="you@example.com" aria-label="Email address">
+      <button type="submit" class="btn btn-primary">Subscribe</button>
+    </form>
+  </div>
+  <p class="newsletter-thanks hidden" id="newsletterThanks">✓ You're on the list — see you at sunset.</p>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="#home" class="brand footer-brand">
+        <span class="brand-mark">270°</span><span class="brand-word">ROOFTOP</span>
+      </a>
+      <p class="muted">Nairobi's panoramic rooftop bar &amp; kitchen. Sunsets, signature cocktails, skyline views.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="#about">Experience</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan a Visit</h4>
+      <ul class="footer-links">
+        <li><a href="#reserve">Reserve a Table</a></li>
+        <li><a href="#visit">Directions</a></li>
+        <li><a href="tel:+254700000000">Call Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p class="muted">Sun–Thu: 11:00 AM – 10:30 PM<br>Fri–Sat: 11:00 AM – 11:30 PM</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> 270° Rooftop. All rights reserved.</p>
+    <p class="muted">Built with 🌇 for the best view in the city.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<!-- Lightbox -->
+<div class="lightbox hidden" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery">×</button>
+  <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous image">‹</button>
+  <div class="lightbox-content">
+    <div class="lightbox-art" id="lightboxArt"></div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+  <button class="lightbox-nav next" id="lightboxNext" aria-label="Next image">›</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
