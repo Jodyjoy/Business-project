@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reviews — 270° Rooftop</title>
+<meta name="description" content="4.3 stars from 664 reviews — see what guests say about 270° Rooftop's views, cocktails and service.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">270°</span>
+      <span class="brand-word">ROOFTOP</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">Experience</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="visit.html" class="nav-link">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle day / night palette" title="Toggle palette">
+        <svg viewBox="0 0 24 24" class="icon-sun"><path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4M4 12H2M22 12h-2M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24" class="icon-moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="reserve.html" class="btn btn-primary btn-small nav-cta">Reserve a Table</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="status-ribbon" id="statusRibbon">
+    <div class="container status-ribbon-inner">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking hours…</span>
+      <span class="dot-sep">•</span>
+      <span id="busyText">—</span>
+      <span class="dot-sep hide-sm">•</span>
+      <span class="hide-sm">4.3 ★ (664 reviews) · 18th Floor, Escada</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="mesh-bg" aria-hidden="true">
+    <div class="mesh-blob b3" style="width:420px;height:420px;top:-10%;left:8%"></div>
+    <div class="mesh-blob b2" style="width:320px;height:320px;bottom:-8%;right:-4%"></div>
+    <div class="grain-dots"></div>
+  </div>
+  <div class="container">
+    <div class="crumb reveal"><a href="index.html">Home</a> / <span>Reviews</span></div>
+    <p class="eyebrow emerald reveal">Guest Love</p>
+    <h1 class="reveal">4.3 ★ from 664 reviews.</h1>
+    <p class="reveal">We'd rather you heard it from the people who've already watched the sun go down from up here.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+    <div class="reviews-carousel reveal" id="reviewsCarousel">
+      <div class="reviews-track" id="reviewsTrack"><!-- populated by js/reviews.js --></div>
+      <button class="carousel-btn prev" id="reviewPrev" aria-label="Previous review">‹</button>
+      <button class="carousel-btn next" id="reviewNext" aria-label="Next review">›</button>
+    </div>
+    <div class="carousel-dots" id="reviewDots"></div>
+
+    <div class="review-grid" id="reviewGrid"><!-- populated by js/reviews.js --></div>
+
+    <div class="ig-strip reveal">
+      <a href="https://www.instagram.com/270rooftop/" target="_blank" rel="noopener" class="ig-strip-title">📸 As seen on Instagram <span>@270rooftop →</span></a>
+      <div class="ig-quotes">
+        <p>"Golden hues and city views — Nairobi sunsets just hit different from up here." <span>— @_mutisocyril</span></p>
+        <p>"I had a bomb HOT spicy margarita the other day 🌶️💋" <span>— @maxinemuigai</span></p>
+      </div>
+    </div>
+
+    <div class="rate-cta reveal">
+      <p>Been to 270°? Rate your visit:</p>
+      <div class="star-input" id="starInput" role="radiogroup" aria-label="Rate your visit">
+        <button data-val="1" aria-label="1 star">★</button>
+        <button data-val="2" aria-label="2 stars">★</button>
+        <button data-val="3" aria-label="3 stars">★</button>
+        <button data-val="4" aria-label="4 stars">★</button>
+        <button data-val="5" aria-label="5 stars">★</button>
+      </div>
+      <p class="thanks-msg hidden" id="thanksMsg">Thanks for the love! 🎉</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand footer-brand"><span class="brand-mark">270°</span><span class="brand-word">ROOFTOP</span></a>
+      <p class="muted">Nairobi's panoramic rooftop bar &amp; kitchen. 18th Floor, Escada Apartments.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">Experience</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan a Visit</h4>
+      <ul class="footer-links">
+        <li><a href="reserve.html">Reserve a Table</a></li>
+        <li><a href="visit.html">Directions</a></li>
+        <li><a href="tel:+254702455665">Call Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p class="muted">Sun–Thu: 11:00 AM – 10:30 PM<br>Fri–Sat: 11:00 AM – 11:30 PM</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> 270° Rooftop. All rights reserved.</p>
+    <p class="muted">Built with 🌇 for the best view in the city.</p>
+  </div>
+</footer>
+
+<div class="upcoming-banner hidden" id="upcomingBanner">
+  <div class="container upcoming-inner">
+    <span>📅 You have an upcoming reservation — <strong id="upcomingText"></strong></span>
+    <button id="cancelUpcoming">Cancel</button>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+<script src="js/reviews.js"></script>
+</body>
+</html>

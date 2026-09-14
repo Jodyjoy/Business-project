@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reserve a Table — 270° Rooftop</title>
+<meta name="description" content="Reserve your table at 270° Rooftop — instant confirmation code, free cancellation, large groups and private events welcome.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div id="cursor-glow" aria-hidden="true"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">270°</span>
+      <span class="brand-word">ROOFTOP</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">Experience</a></li>
+        <li><a href="menu.html" class="nav-link">Menu</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="visit.html" class="nav-link">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle day / night palette" title="Toggle palette">
+        <svg viewBox="0 0 24 24" class="icon-sun"><path d="M12 4V2M12 22v-2M4.9 4.9 3.5 3.5M20.5 20.5l-1.4-1.4M4.9 19.1l-1.4 1.4M20.5 3.5l-1.4 1.4M4 12H2M22 12h-2M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg viewBox="0 0 24 24" class="icon-moon"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="reserve.html" class="btn btn-primary btn-small nav-cta">Reserve a Table</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="status-ribbon" id="statusRibbon">
+    <div class="container status-ribbon-inner">
+      <span class="status-dot" id="statusDot"></span>
+      <span id="statusText">Checking hours…</span>
+      <span class="dot-sep">•</span>
+      <span id="busyText">—</span>
+      <span class="dot-sep hide-sm">•</span>
+      <span class="hide-sm">4.3 ★ (664 reviews) · 18th Floor, Escada</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-hero">
+  <div class="mesh-bg" aria-hidden="true">
+    <div class="mesh-blob b2" style="width:420px;height:420px;top:-10%;right:6%"></div>
+    <div class="mesh-blob b1" style="width:340px;height:340px;bottom:-10%;left:-4%"></div>
+    <div class="grain-dots"></div>
+  </div>
+  <div class="container">
+    <div class="crumb reveal"><a href="index.html">Home</a> / <span>Reserve</span></div>
+    <p class="eyebrow reveal">Find a Table</p>
+    <h1 class="reveal">Reserve your sunset spot.</h1>
+    <p class="reveal">Tables move fast, especially Thursday through Sunday evenings. Tell us when you're coming and we'll hold your view.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:30px">
+  <div class="container reserve-grid">
+    <div class="reserve-copy reveal">
+      <p class="eyebrow emerald">Why Book Ahead</p>
+      <h2>What you get</h2>
+      <ul class="reserve-points">
+        <li>✓ Instant confirmation code</li>
+        <li>✓ Free cancellation up to 2 hours ahead</li>
+        <li>✓ Large groups &amp; private events welcome</li>
+      </ul>
+      <div class="reserve-alt">
+        <a href="tel:+254702455665" class="alt-link">📞 Prefer to call? 0702 455 665</a>
+        <a href="https://wa.me/254702455665" target="_blank" rel="noopener" class="alt-link">💬 WhatsApp us</a>
+      </div>
+    </div>
+
+    <form class="reserve-form reveal" id="reserveForm" novalidate>
+      <div class="form-row">
+        <div class="field">
+          <label for="rName">Full name</label>
+          <input id="rName" name="name" type="text" required placeholder="Jane Wanjiru">
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="rPhone">Phone number</label>
+          <input id="rPhone" name="phone" type="tel" required placeholder="07XX XXX XXX">
+          <span class="error-msg"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="rEmail">Email <span class="optional">(for confirmation)</span></label>
+        <input id="rEmail" name="email" type="email" placeholder="you@example.com">
+        <span class="error-msg"></span>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="rDate">Date</label>
+          <input id="rDate" name="date" type="date" required>
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="rTime">Time</label>
+          <select id="rTime" name="time" required>
+            <option value="">Select time</option>
+            <option>11:00 AM</option><option>12:00 PM</option><option>1:00 PM</option>
+            <option>2:00 PM</option><option>3:00 PM</option><option>4:00 PM</option>
+            <option selected>5:00 PM</option><option>6:00 PM</option><option>7:00 PM</option>
+            <option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option>
+          </select>
+          <span class="error-msg"></span>
+        </div>
+        <div class="field">
+          <label for="rGuests">Guests</label>
+          <select id="rGuests" name="guests" required>
+            <option value="">#</option>
+          </select>
+          <span class="error-msg"></span>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="rOccasion">Occasion <span class="optional">(optional)</span></label>
+        <select id="rOccasion" name="occasion">
+          <option value="">Just a visit</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Date night</option>
+          <option>Business</option>
+          <option>Group celebration</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="rNotes">Special requests <span class="optional">(optional)</span></label>
+        <textarea id="rNotes" name="notes" rows="3" placeholder="Window seat, allergies, birthday cake…"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-full">
+        <span class="btn-label">Confirm Reservation</span>
+        <span class="btn-spinner" aria-hidden="true"></span>
+      </button>
+      <p class="form-fineprint">By reserving you agree to arrive within 15 minutes of your slot. Tables are held for 15 minutes past booking time.</p>
+    </form>
+  </div>
+
+  <div class="modal-backdrop hidden" id="confirmModal">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div class="confirm-check">✓</div>
+      <h3 id="confirmTitle">Table reserved!</h3>
+      <p>We've saved your booking. Show this code at the door:</p>
+      <p class="confirm-code" id="confirmCode">270-000000</p>
+      <div class="confirm-details" id="confirmDetails"></div>
+      <div class="confirm-actions">
+        <button class="btn btn-outline" id="modalNewBooking" type="button">Book Another</button>
+        <button class="btn btn-primary" id="modalDone" type="button">Done</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand footer-brand"><span class="brand-mark">270°</span><span class="brand-word">ROOFTOP</span></a>
+      <p class="muted">Nairobi's panoramic rooftop bar &amp; kitchen. 18th Floor, Escada Apartments.</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul class="footer-links">
+        <li><a href="about.html">Experience</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Plan a Visit</h4>
+      <ul class="footer-links">
+        <li><a href="reserve.html">Reserve a Table</a></li>
+        <li><a href="visit.html">Directions</a></li>
+        <li><a href="tel:+254702455665">Call Us</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <p class="muted">Sun–Thu: 11:00 AM – 10:30 PM<br>Fri–Sat: 11:00 AM – 11:30 PM</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> 270° Rooftop. All rights reserved.</p>
+    <p class="muted">Built with 🌇 for the best view in the city.</p>
+  </div>
+</footer>
+
+<div class="upcoming-banner hidden" id="upcomingBanner">
+  <div class="container upcoming-inner">
+    <span>📅 You have an upcoming reservation — <strong id="upcomingText"></strong></span>
+    <button id="cancelUpcoming">Cancel</button>
+  </div>
+</div>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+
+<script src="js/main.js"></script>
+<script src="js/reserve.js"></script>
+</body>
+</html>
