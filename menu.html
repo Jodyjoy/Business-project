@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js')</script>
 <title>Menu — 270° Rooftop</title>
 <meta name="description" content="The full 270° Rooftop menu — signature cocktails, sips, mocktails, beer & cider, coffee & tea, and a Shell & Fin / Grill & Thrill / Leafy & Lovely kitchen.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
@@ -59,18 +60,17 @@
 <section class="page-hero">
   <div class="mesh-bg" aria-hidden="true">
     <div class="mesh-blob b2" style="width:420px;height:420px;top:-10%;left:10%"></div>
-    <div class="mesh-blob b1" style="width:340px;height:340px;top:10%;right:-6%"></div>
     <div class="grain-dots"></div>
   </div>
   <div class="container">
     <div class="crumb reveal"><a href="index.html">Home</a> / <span>Menu</span></div>
-    <p class="eyebrow reveal">The Menu</p>
-    <h1 class="reveal">Crafted to sip, share &amp; savor.</h1>
+    <p class="eyebrow reveal" data-reveal="mask"><span class="mask-inner">The Menu</span></p>
+    <h1 class="reveal" data-reveal="mask" style="--d:.08s"><span class="mask-inner">Crafted to sip, share &amp; savor.</span></h1>
     <p class="reveal">From sunrise espresso to midnight sips — the full bar and kitchen, transcribed straight from our boards.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:40px">
+<section class="section seam-glow" style="padding-top:40px">
   <div class="container">
     <div class="menu-controls reveal">
       <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Menu categories">
@@ -101,7 +101,7 @@
 <section class="section" style="text-align:center">
   <div class="container reveal">
     <p class="eyebrow">Hungry Yet?</p>
-    <h2>Reserve a table before the sun sets</h2>
+    <h2 class="reveal" data-reveal="mask"><span class="mask-inner">Reserve a table before the sun sets</span></h2>
     <div style="margin-top:22px"><a href="reserve.html" class="btn btn-primary">Find a Table</a></div>
   </div>
 </section>

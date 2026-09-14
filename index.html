@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js')</script>
 <title>270° Rooftop — Nairobi's Sky-High Rooftop Bar &amp; Kitchen</title>
 <meta name="description" content="270° Rooftop — panoramic skyline views, signature cocktails, and elevated dining on the 18th floor of Escada Apartments, Nairobi.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
@@ -57,13 +58,11 @@
 <main id="main">
 
 <section class="hero" id="home">
-  <div class="mesh-bg" aria-hidden="true">
+  <div class="mesh-bg" data-parallax="0.12" aria-hidden="true">
     <div class="mesh-blob b1"></div>
     <div class="mesh-blob b2"></div>
-    <div class="mesh-blob b3"></div>
     <div class="grain-dots"></div>
-    <div class="particle-field" data-count="22" aria-hidden="true"></div>
-    <svg class="skyline" viewBox="0 0 1600 500" preserveAspectRatio="none">
+    <svg class="skyline" data-parallax="0.05" viewBox="0 0 1600 500" preserveAspectRatio="none">
       <rect x="40" y="260" width="70" height="240" /><rect x="130" y="200" width="55" height="300" />
       <rect x="200" y="300" width="90" height="200" /><rect x="310" y="150" width="45" height="350" />
       <rect x="370" y="230" width="80" height="270" /><rect x="470" y="120" width="60" height="380" />
@@ -77,8 +76,8 @@
   </div>
 
   <div class="hero-content container">
-    <p class="eyebrow reveal">Nairobi's Rooftop Icon · 270° of Skyline</p>
-    <h1 class="reveal">Sunsets taste better <span class="italic">up here.</span></h1>
+    <p class="eyebrow reveal" data-reveal="mask"><span class="mask-inner">Nairobi's Rooftop Icon · 270° of Skyline</span></p>
+    <h1 class="reveal" data-reveal="mask" style="--d:.08s"><span class="mask-inner">Sunsets taste better <span class="italic">up here.</span></span></h1>
     <p class="hero-sub reveal">Signature cocktails, an elevated kitchen, and uninterrupted panoramic views — eighteen floors above the city, open through golden hour into the night.</p>
 
     <div class="hero-meta reveal">
@@ -95,7 +94,7 @@
     <div class="hero-actions reveal">
       <a href="reserve.html" class="btn btn-primary">Find a Table</a>
       <a href="menu.html" class="btn btn-ghost">View Menu</a>
-      <a href="visit.html" class="btn btn-outline">Get Directions →</a>
+      <a href="visit.html" class="btn btn-outline">Get Directions <i class="arrow">→</i></a>
     </div>
   </div>
 
@@ -104,41 +103,30 @@
   </button>
 </section>
 
-<div class="marquee" aria-hidden="true">
-  <div class="marquee-track">
-    <span>270° Skyline Views</span><span>•</span><span>Signature Cocktails</span><span>•</span>
-    <span>Sunset Golden Hour</span><span>•</span><span>18th Floor, Escada</span><span>•</span>
-    <span>Cashless — Card &amp; M-Pesa</span><span>•</span><span>Elevated Dining</span><span>•</span>
-    <span>270° Skyline Views</span><span>•</span><span>Signature Cocktails</span><span>•</span>
-    <span>Sunset Golden Hour</span><span>•</span><span>18th Floor, Escada</span><span>•</span>
-    <span>Cashless — Card &amp; M-Pesa</span><span>•</span><span>Elevated Dining</span><span>•</span>
-  </div>
-</div>
-
-<section class="section">
+<section class="section seam-glow">
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">Discover 270°</p>
-      <h2>Three ways to fall for the view</h2>
+      <h2 class="reveal" data-reveal="mask"><span class="mask-inner">Three ways to fall for the view</span></h2>
     </div>
     <div class="teaser-grid">
-      <a class="teaser-card reveal" href="about.html" style="--d:0s">
+      <a class="teaser-card reveal" data-reveal="scale" href="about.html" style="--d:0s">
         <div class="teaser-bg" style="background:linear-gradient(150deg,var(--terracotta),var(--gold))"></div>
         <h3>The Experience</h3>
         <p>Our story, what to know before you visit, and what makes the 18th floor unlike anywhere else in Nairobi.</p>
-        <span class="teaser-link">Read more →</span>
+        <span class="teaser-link">Read more <i class="arrow">→</i></span>
       </a>
-      <a class="teaser-card reveal" href="menu.html" style="--d:.08s">
+      <a class="teaser-card reveal" data-reveal="scale" href="menu.html" style="--d:.08s">
         <div class="teaser-bg" style="background:linear-gradient(150deg,var(--gold),var(--gold-light))"></div>
         <h3>Crafted Menu</h3>
         <p>Thirteen signature cocktails, a Shell &amp; Fin / Grill &amp; Thrill / Leafy &amp; Lovely kitchen, and coffee for the morning after.</p>
-        <span class="teaser-link">View menu →</span>
+        <span class="teaser-link">View menu <i class="arrow">→</i></span>
       </a>
-      <a class="teaser-card reveal" href="gallery.html" style="--d:.16s">
+      <a class="teaser-card reveal" data-reveal="scale" href="gallery.html" style="--d:.16s">
         <div class="teaser-bg" style="background:linear-gradient(150deg,var(--emerald),var(--emerald-light))"></div>
         <h3>The Gallery</h3>
         <p>Golden-hour skylines, marble-top cocktails, and the lounge everyone's tagging on Instagram.</p>
-        <span class="teaser-link">See photos →</span>
+        <span class="teaser-link">See photos <i class="arrow">→</i></span>
       </a>
     </div>
   </div>
@@ -147,10 +135,10 @@
 <section class="section section-tight" style="background:var(--bg-alt)">
   <div class="container">
     <div class="stats-row">
-      <div class="stat-card reveal" style="--d:0s"><div class="stat-num" data-count="4.3">0</div><div class="stat-label">Google Rating</div></div>
-      <div class="stat-card reveal" style="--d:.08s"><div class="stat-num" data-count="664" data-suffix="+">0</div><div class="stat-label">Reviews</div></div>
-      <div class="stat-card reveal" style="--d:.16s"><div class="stat-num" data-count="18">0</div><div class="stat-label">Floors Up</div></div>
-      <div class="stat-card reveal" style="--d:.24s"><div class="stat-num" data-count="270">0</div><div class="stat-label">° of Skyline</div></div>
+      <div class="stat-card reveal" data-reveal="scale" style="--d:0s"><div class="stat-num" data-count="4.3">0</div><div class="stat-label">Google Rating</div></div>
+      <div class="stat-card reveal" data-reveal="scale" style="--d:.08s"><div class="stat-num" data-count="664" data-suffix="+">0</div><div class="stat-label">Reviews</div></div>
+      <div class="stat-card reveal" data-reveal="scale" style="--d:.16s"><div class="stat-num" data-count="18">0</div><div class="stat-label">Floors Up</div></div>
+      <div class="stat-card reveal" data-reveal="scale" style="--d:.24s"><div class="stat-num" data-count="270">0</div><div class="stat-label">° of Skyline</div></div>
     </div>
   </div>
 </section>
@@ -159,21 +147,21 @@
   <div class="container">
     <div class="section-head reveal">
       <p class="eyebrow">From The Bar</p>
-      <h2>A few of our signatures</h2>
+      <h2 class="reveal" data-reveal="mask"><span class="mask-inner">A few of our signatures</span></h2>
       <p class="section-sub">Hand-crafted, house-infused, and made to be photographed before you sip.</p>
     </div>
     <div class="tip-grid">
-      <div class="tip-card reveal" style="--d:0s">
+      <div class="tip-card reveal" data-reveal="scale" style="--d:0s">
         <div class="tip-icon">🍹</div>
         <h3>El Franco Spicy Margarita</h3>
         <p>Tequila, mezcal, grapefruit, watermelon, mint &amp; jalapeño — the one everyone orders twice.</p>
       </div>
-      <div class="tip-card reveal" style="--d:.08s">
+      <div class="tip-card reveal" data-reveal="scale" style="--d:.08s">
         <div class="tip-icon">🌇</div>
         <h3>270° Sunset</h3>
         <p>Whiskey, Aperol, pineapple &amp; aquafaba — built to watch the skyline turn gold.</p>
       </div>
-      <div class="tip-card reveal" style="--d:.16s">
+      <div class="tip-card reveal" data-reveal="scale" style="--d:.16s">
         <div class="tip-icon">🥥</div>
         <h3>Tiki Don Colada</h3>
         <p>Don Julio Blanco, lychee, coconut cream &amp; blue curaçao — a tropical escape, 18 floors up.</p>
@@ -190,13 +178,13 @@
     <div class="split-cta reveal">
       <div class="cta-a">
         <p class="eyebrow">Ready When You Are</p>
-        <h2>Reserve your sunset spot</h2>
+        <h2 class="reveal" data-reveal="mask"><span class="mask-inner">Reserve your sunset spot</span></h2>
         <p>Tables move fast Thursday through Sunday. Lock yours in for golden hour.</p>
         <div><a href="reserve.html" class="btn btn-primary">Find a Table</a></div>
       </div>
       <div class="cta-b">
         <p class="eyebrow emerald">18th Floor, Escada</p>
-        <h2>Plan your visit</h2>
+        <h2 class="reveal" data-reveal="mask"><span class="mask-inner">Plan your visit</span></h2>
         <p>Directions, hours, cashless payment info and everything you need to find us.</p>
         <div><a href="visit.html" class="btn btn-emerald">Visit Us</a></div>
       </div>

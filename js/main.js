@@ -118,23 +118,40 @@
   }
 
   /* ---------------------------------------------------------
-     FLOATING PARTICLES (decorative, hero sections only)
+     PARALLAX (hero background layers only — GPU transform,
+     rAF-batched single scroll listener, off on mobile/reduced
+     motion so it never fights touch scrolling or costs battery)
   --------------------------------------------------------- */
-  document.querySelectorAll(".particle-field").forEach((field) => {
-    const count = Number(field.dataset.count) || 18;
-    for (let i = 0; i < count; i++) {
-      const p = document.createElement("span");
-      p.className = "particle";
-      const size = 2 + Math.random() * 3;
-      p.style.width = size + "px";
-      p.style.height = size + "px";
-      p.style.left = Math.random() * 100 + "%";
-      p.style.bottom = "-10px";
-      p.style.animationDuration = 10 + Math.random() * 14 + "s";
-      p.style.animationDelay = Math.random() * 14 + "s";
-      field.appendChild(p);
-    }
-  });
+  const parallaxEls = Array.from(document.querySelectorAll("[data-parallax]"));
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (parallaxEls.length && !prefersReducedMotion) {
+    let ticking = false;
+    const applyParallax = () => {
+      ticking = false;
+      if (window.innerWidth < 760) {
+        parallaxEls.forEach((el) => (el.style.transform = ""));
+        return;
+      }
+      const y = window.scrollY;
+      parallaxEls.forEach((el) => {
+        const factor = Number(el.dataset.parallax) || 0.15;
+        const rect = el.parentElement.getBoundingClientRect();
+        if (rect.bottom < 0 || rect.top > window.innerHeight) return;
+        el.style.transform = `translate3d(0, ${Math.round(y * factor)}px, 0)`;
+      });
+    };
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          ticking = true;
+          requestAnimationFrame(applyParallax);
+        }
+      },
+      { passive: true }
+    );
+    applyParallax();
+  }
 
   /* ---------------------------------------------------------
      LIVE HOURS / OPEN-CLOSED / CROWD METER

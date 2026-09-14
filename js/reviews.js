@@ -80,7 +80,7 @@
     ];
     reviewGrid.innerHTML = EXTRA.map(
       (r) => `
-      <div class="review-mini reveal">
+      <div class="review-mini reveal" data-reveal="scale">
         <div class="review-stars">${"★".repeat(r.stars)}${"☆".repeat(5 - r.stars)}</div>
         <p>"${r.quote}"</p>
         <div class="review-name">${r.name}</div>

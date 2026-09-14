@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js')</script>
 <title>Gallery — 270° Rooftop</title>
 <meta name="description" content="A look at 270° Rooftop — golden-hour skyline views, signature cocktails, small plates and the lounge everyone's tagging.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
@@ -59,18 +60,17 @@
 <section class="page-hero">
   <div class="mesh-bg" aria-hidden="true">
     <div class="mesh-blob b3" style="width:400px;height:400px;top:-8%;right:6%"></div>
-    <div class="mesh-blob b1" style="width:340px;height:340px;bottom:-10%;left:-6%"></div>
     <div class="grain-dots"></div>
   </div>
   <div class="container">
     <div class="crumb reveal"><a href="index.html">Home</a> / <span>Gallery</span></div>
-    <p class="eyebrow reveal">Gallery</p>
-    <h1 class="reveal">A taste of the view.</h1>
+    <p class="eyebrow reveal" data-reveal="mask"><span class="mask-inner">Gallery</span></p>
+    <h1 class="reveal" data-reveal="mask" style="--d:.08s"><span class="mask-inner">A taste of the view.</span></h1>
     <p class="reveal">Filter by what you're in the mood for — the skyline, the bar, the kitchen, or the crowd.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:40px">
+<section class="section seam-glow" style="padding-top:40px">
   <div class="container">
     <div class="gallery-filters reveal">
       <button class="tab-btn active" data-filter="all">All</button>
@@ -86,7 +86,7 @@
 <section class="section" style="text-align:center">
   <div class="container reveal">
     <p class="eyebrow emerald">Seen Enough?</p>
-    <h2>Come see it in person</h2>
+    <h2 class="reveal" data-reveal="mask"><span class="mask-inner">Come see it in person</span></h2>
     <div style="margin-top:22px"><a href="reserve.html" class="btn btn-emerald">Reserve a Table</a></div>
   </div>
 </section>

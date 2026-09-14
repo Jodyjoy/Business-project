@@ -201,7 +201,7 @@
   function renderMenu() {
     menuGrid.innerHTML = MENU.map(
       (group) => `
-      <div class="menu-group reveal" data-key="${group.key}">
+      <div class="menu-group reveal" data-reveal="scale" data-key="${group.key}">
         <h3 class="menu-group-title">${group.group} ${group.note ? `<small>${group.note}</small>` : ""}</h3>
         <div class="menu-items">
           ${group.items
@@ -212,10 +212,11 @@
               const priceHtml = price ? `Ksh ${price.toLocaleString()}` : "";
               return `
             <div class="menu-item" data-name="${name.toLowerCase()}">
-              <div>
-                <div class="item-name">${name}${tagHtml}</div>
+              <div class="item-main">
+                <div class="item-name"><span class="item-title">${name}</span>${tagHtml}</div>
                 ${desc ? `<div class="item-desc">${desc}</div>` : ""}
               </div>
+              <span class="item-leader" aria-hidden="true"></span>
               <div class="item-price">${priceHtml}</div>
             </div>`;
             })

@@ -29,7 +29,7 @@
     galleryGrid.innerHTML = filtered
       .map(
         (g, i) => `
-      <figure class="gallery-item reveal" data-index="${GALLERY.indexOf(g)}" tabindex="0" style="--d:${(i % 6) * 0.06}s">
+      <figure class="gallery-item reveal" data-reveal="scale" data-index="${GALLERY.indexOf(g)}" tabindex="0" style="--d:${(i % 6) * 0.06}s">
         <div class="gallery-art" style="background:${g.grad}">
           <div class="gallery-icon">${g.icon}</div>
         </div>

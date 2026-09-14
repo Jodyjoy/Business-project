@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js')</script>
 <title>Visit Us — 270° Rooftop</title>
 <meta name="description" content="Find 270° Rooftop — 18th Floor, Escada Apartments, Nairobi. Hours, live status, directions, contact and payment info.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌇</text></svg>">
@@ -59,18 +60,17 @@
 <section class="page-hero">
   <div class="mesh-bg" aria-hidden="true">
     <div class="mesh-blob b3" style="width:420px;height:420px;top:-10%;left:6%"></div>
-    <div class="mesh-blob b2" style="width:320px;height:320px;bottom:-10%;right:-2%"></div>
     <div class="grain-dots"></div>
   </div>
   <div class="container">
     <div class="crumb reveal"><a href="index.html">Home</a> / <span>Visit</span></div>
-    <p class="eyebrow emerald reveal">Visit Us</p>
-    <h1 class="reveal">Find us above the skyline.</h1>
+    <p class="eyebrow emerald reveal" data-reveal="mask"><span class="mask-inner">Visit Us</span></p>
+    <h1 class="reveal" data-reveal="mask" style="--d:.08s"><span class="mask-inner">Find us above the skyline.</span></h1>
     <p class="reveal">18th Floor, Escada Apartments — take the lift up, the rooftop entrance is straight ahead.</p>
   </div>
 </section>
 
-<section class="section" style="padding-top:30px">
+<section class="section seam-glow" style="padding-top:30px">
   <div class="container hours-grid">
     <div class="hours-card reveal">
       <h3>🕐 Hours</h3>
@@ -105,8 +105,8 @@
 
 <section class="section">
   <div class="container visit-grid">
-    <div class="visit-map reveal" aria-hidden="true">
-      <div class="map-frame">
+    <div class="visit-map reveal" data-reveal="mask" aria-hidden="true">
+      <div class="map-frame mask-inner">
         <svg viewBox="0 0 400 300" class="map-lines">
           <path d="M0 60 H400 M0 140 H400 M0 220 H400" stroke="currentColor" stroke-opacity=".18" stroke-width="2"/>
           <path d="M60 0 V300 M160 0 V300 M260 0 V300 M340 0 V300" stroke="currentColor" stroke-opacity=".18" stroke-width="2"/>
