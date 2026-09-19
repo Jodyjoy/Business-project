@@ -233,6 +233,12 @@ a:hover .arrow, .btn:hover .arrow{ transform: translateX(5px); }
    MESH BACKGROUNDS + SKYLINE (shared decorative system)
    ========================================================= */
 .mesh-bg{ position:absolute; inset:0; overflow:hidden; z-index:0; animation: bgSettle 1.1s cubic-bezier(.2,.8,.2,1) both; }
+/* Drop a real photo into images/hero/ (see its README) and it replaces the
+   abstract gradient/blob art direction automatically — no code changes
+   needed. A scrim keeps hero text legible over any photo. */
+.hero-photo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+.hero-photo-scrim{ position:absolute; inset:0; z-index:0; background: linear-gradient(180deg, rgba(11,12,15,.55), rgba(11,12,15,.8) 65%, var(--bg) 100%); }
+.mesh-bg:has(.hero-photo) .mesh-blob{ opacity:0; }
 .mesh-blob{
   position:absolute; border-radius:50%; filter: blur(100px); opacity:.28; will-change: transform;
   animation: floatBlob 34s ease-in-out infinite;
@@ -485,6 +491,10 @@ a:hover .arrow, .btn:hover .arrow{ transform: translateX(5px); }
 .gallery-item:nth-child(4n+1){ grid-row: span 2; aspect-ratio: 1/2.1; }
 .gallery-art{ position:absolute; inset:0; transform: scale(1); transition: transform .7s cubic-bezier(.2,.8,.2,1); }
 .gallery-item:hover .gallery-art{ transform: scale(1.08); }
+/* Drop a real photo into images/gallery/ (see its README) and it replaces
+   the gradient+emoji placeholder automatically — no code changes needed. */
+.gallery-photo{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:0; }
+.gallery-art.has-photo .gallery-icon{ display:none; }
 .gallery-art::before{
   content:""; position:absolute; inset:0; z-index:1;
   background:
@@ -688,6 +698,7 @@ a:hover .arrow, .btn:hover .arrow{ transform: translateX(5px); }
 .footer-links a:hover{ color: var(--gold-light); }
 .site-footer h4{ font-size:.85rem; text-transform:uppercase; letter-spacing:.1em; margin-bottom: 16px; color: var(--text); }
 .footer-bottom{ display:flex; justify-content:space-between; padding: 24px 0; font-size:.8rem; flex-wrap:wrap; gap:8px; }
+.footer-bottom a:hover{ color: var(--gold-light); text-decoration: underline; }
 
 /* =========================================================
    FLOATING WIDGETS

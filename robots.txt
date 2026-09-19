@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jodyjoy.github.io/Business-project/sitemap.xml
